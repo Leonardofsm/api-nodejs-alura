@@ -1,6 +1,12 @@
 const Atendimento = require('../models/atendimentos')
+const Coracao = require('../models/coracao')
 
 module.exports = app => {
+    
+    app.get('/coracao-do-leozinho', (req, res) => {
+        Coracao.amor(res)
+    })
+
     app.get('/atendimentos', (req, res) => {
         Atendimento.lista(res)
     })
