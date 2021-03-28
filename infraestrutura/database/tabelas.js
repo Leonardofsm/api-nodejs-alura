@@ -1,3 +1,5 @@
+const conexao = require('./conexao')
+
 class Tabelas {
     init(conexao) {
         this.conexao = conexao;
